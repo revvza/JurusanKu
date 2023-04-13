@@ -1,0 +1,104 @@
+{
+    "jurusan" : [
+        {
+            "nomor" : 1,
+            "nama" : "Geografi",
+            "kategori" : "Geografi & Kebumian",
+            "deskripsi" : "Kalian akan mempelajari topografi, iklim, hingga geografi manusia untuk mencari hubungan antara kondisi alami dan pengumpulan populasi, penggunaan lahan, industri, sejarah, budaya, dan sebagainya. Selain belajar tentang fisik bumi, kamu juga akan dibekali dengan kemampuan untuk memahami perspektif regional dalam berbagai pengembangan wilayah termasuk penguasaan teknologi sistem informasi geografis.",
+            "keahlian" : "Kemampuan meneliti, Kemampuan menganalisis dan mensintesis, Kemampuan membaca data spasial, Kemampuan melakukan perencanaan, Kemampuan manajerial, Kemampuan komunikasi, Pemahaman geografi.",
+            "kerja" : "PNS, Tekniksi dan Operator Pabrik, Surveyer Tanah, Tenaga Ahli Prakiraan Cuaca, Dosen, System Analyst.",
+            "perkuliahan" : "Selama 4 tahun atau 8 semester ditempa, kalian akan banyak mengkaji bentuk permukaan bumi dan proses perubahannya, atmosfer, iklim, proses pembentukan awan, hidrologi, kualitas air, mineral penyusun batuan, ekologi dan ilmu lingkungan, ilmu wilayah, dan masih banyak lagi.",
+            "alasan" : "Peluang kerja lulusan Geografi sangat besar seiring dengan meningkatnya kebutuhan informasi geospasial. Bahkan, seluruh Bappeda provinsi maupun kabupaten/kota diwajibkan memiliki ahli di bidang geografi."
+        },
+        {
+            "nomor" : 2,
+            "nama" : "Teknik Geologi",
+            "kategori" : "Geografi & Kebumian",
+            "deskripsi" : "Teknik Geologi merupakan bidang studi yang banyak melakukan penelitian terkait bumi, komposisi, struktur, sifat-sifat fisik, sejarah, hingga proses pembentukannya. Perkembangan ilmu geologi saat ini sangat luas, sehingga tidak hanya terbatas pada sumber daya mineral, tetapi juga konstruksi bangunan hingga bencana.",
+            "keahlian" : "Kemampuan melakukan observasi, Kemampuan melakukan analisis, Kemampuan berpikir rasional, Kemampuan berpikir sistematis, Kemampuan meneliti, Pemahaman matematika.",
+            "kerja" : "PNS, Teknisi (Tambang, Minyak, Material), Kontraktor, Surveyor Tanah.",
+            "perkuliahan" : "Kuliah di jurusan Teknik Geologi selama 4 tahun atau 8 semester, kalian akan fokus pada kajian-kajian yang berhubungan dengan kebumian, seperti bentuk muka bumi, materi penyusun bumi sampai berbagai macam batuan.",
+            "alasan" : "Karier di bidang pengelolaan kebencanaan dalam rangka pembangunan wilayah yang berkelanjutan juga patut diperhitungan lulusan Teknik Geologi dan Perusahaan-perusahaan swasta juga banyak yang membutuhkan lulusan Teknik Geologi."        
+        },
+        {
+            "nomor" : 3,
+            "nama" : "Filsafat",
+            "kategori" : "Filsafat & Ilmu Budaya",
+            "deskripsi" : "Filsafat merupakan bidang ilmu yang mempelajari cara berpikir. Kalian dilatih untuk mempertanyakan suatu keadaan. Selain itu, juga akan diajarkan bagaimana memformulasikan dan mengokohkan pandanganmu secara merdeka tentang suatu permasalahan di dunia ini. Kamu akan diajak untuk mengenal jenis-jenis kesesatan berpikir, karakteristik ilmu pengetahuan, mengkritik suatu karya seni, pentingnya empati, mengkaji kapan suatu tindakan bisa dikatakan baik dan buruk, dan sebagainya.",
+            "keahlian" : "Kemampuan berpikir kritis, Kemampuan bernalar logis, Kemampuan berargumentasi, Kemampuan komunikasi, Kemampuan observasi, Kemampuan meneliti, Kemampuan melakukan analisis.",
+            "kerja" : "Kurator, Arsiparis, Jurnalis, Dosen, Penulis, Peneliti.",
+            "perkuliahan" : "Percayalah kuliah selama 4 tahun atau 8 semester di jurusan ini kamu akan ditempatkan pada area latihan mengutarakan pendapat tanpa merasa takut dihakimi.",
+            "alasan" : "Memiliki kemampuan berpikir kritis, rasional, dan logis, sehingga mampu menjadi pencetus ide yang diberbagai bidang. Dengan kata lain, lulusan Filsafat bisa kerja jadi apa saja!"        
+        },
+        {
+            "nomor" : 4,
+            "nama" : "Sejarah",
+            "kategori" : "Filsafat & Ilmu Budaya",
+            "deskripsi" : "Disini kamu akan mempelajari segala hal yang berkaitan dengan sejarah, mulai dari geografi sejarah, sejarah kerajaan nusantara, sejarah dunia, sejarah Indonesia, dan sebagainya. Ilmu sejarah itu berkaitan erat sama kehidupan manusia, seperti politik, sosial, budaya, bahasa, ekonomi, dan militer",
+            "keahlian" : "Kemampuan melakukan analisis, Kemampuan penelitian, Kemampuan komunikasi, Kemampuan melakukan observasi, Kemampuan berpikir rasional dan terstruktur, Berwawasan luas, Gemar membaca buku.",
+            "kerja" : "Sejarawan, Dosen, Guru, Penulis, Penerjemah (Lisan, Tulisan), Pemandu Wisata, Pustakawan, Jurnalis.",
+            "perkuliahan" : "Kuliah di Jurusan Ilmu Sejarah itu menarik banget! Selain mempelajari sejarah dari zaman kuno sampai zaman modern di atas abad 20, cakupan Ilmu Sejarah ternyata sangat luas. Ada aspek budaya, sosial, ekonomi, politik, juga agama. ",
+            "alasan" : "Bisa berkontribusi dalam menumbuhkembangkan dan menciptakan karya di bidang Sejarah kemudian menyebarluaskannya."        
+        },
+        {
+            "nomor" : 5,
+            "nama" : "Manajemen",
+            "kategori" : "Ekonomi & Bisnis",
+            "deskripsi" : "Jurusan Manajemen merupakan bidang keilmuan yang mempelajari tentang kegiatan perusahaan atau korporasi, yang masih memiliki keterkaitan dengan ilmu ekonomi dan bisnis. Kamu akan mengendalikan roda perusahaan berupa kegiatan yang meliputi kebijakan manajemen perusahaan, organisasi, strategi bisnis, ketenagakerjaan dan kepegawaian, manajemen produksi, pemasaran, administrasi, hingga organisasi nirlaba.",
+            "keahlian" : "Kemampuan mengatur manusia, Kemampuan mengelola keuangan, Kemampuan berkomunikasi, Kemampuan bersosialisasi, Kemampuan manajerial, Kemampuan menganalisis, Sikap kepemimpinan.",
+            "kerja" : "Sales, Pegawai Bank, Product Manager, Market Researcher, Event Organizer, Wirausaha.",
+            "perkuliahan" : "Dengan memilih Manajemen sebagai program studi selanjutnya, kamu akan mempelajari banyak hal terkait dunia ekonomi dan bisnis. Umumnya, kamu akan ditempa selama 4 tahun atau 8 semester dan meraih gelar Sarjana Manajemen atau Sarjana Ekonomi setelah menuntaskan studi.",
+            "alasan" : "Setiap jenjang karier di tiap-tiap bidang pasti membutuhkan seorang manajer. Hal ini menjadi bukti bahwa Ilmu Manajemen dibutuhkan di setiap lini yang ada di perusahaan."        
+        },
+        {
+            "nomor" : 6,
+            "nama" : "Ilmu Ekonomi",
+            "kategori" : "Ekonomi & Bisnis",
+            "deskripsi" : "Kalian akan fokus pada upaya pengalokasian sumber daya yang terbatas dan memperoleh keuntungan optimal. Selain itu, kamu juga akan mengeksplorasi upaya pemberdayaan ekonomi. Dewasa ini, tren pembelajaran Ilmu Ekonomi mulai banyak yang mengarah pada behavioral economics lho. Selain itu, mulai berkembang pula crime economics, jadi kamu bisa melakukan analisis terhadap permasalahan hukum yang ditinjau dari sisi ekonomi. ",
+            "keahlian" : "Kemampuan matematika, Kemampuan observasi terhadap masalah sosial-ekonomi, Kemampuan berpikir logis dan terstruktur, Kemampuan berpikir kritis, Kemampuan menganalisis, Kemampuan menyelesaikan persoalan.",
+            "kerja" : "Makelar Saham, Akuntan, Sales di Lembaga Keuangan, Pegawai Asuransi, Bagian Perencanaan dan Pengembangan Real Estate, Marker Researcher.",
+            "perkuliahan" : "",
+            "alasan" : "Seiring dengan semakin terbukanya keran globalisasi dan semakin terintegrasinya negara-negara di dunia, maka lulusan Ilmu Ekonomi juga sangat dibutuhkan dalam perdagangan internasional."        
+        },
+        {
+            "nomor" : 7,
+            "nama" : "Teknik Informatika",
+            "kategori" : "Komputer & Informatika",
+            "deskripsi" : "Teknik Informatika merupakan bidang ilmu yang mempelajari bagaimana menggunakan teknologi komputer secara optimal guna menangani masalah transformasi atau pengolahan data dengan proses logika. Di Jurusan Teknik Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak. Selama kuliah kamu akan banyak mengkaji pemrograman dan komputasi, dan dibekali pula dengan keterampilan merancang perangkat lunak.",
+            "keahlian" : "Kemampuan melakukan analisis, Kemampuan berpikir logis, Kemampuan berpikir sistematis, Kemampuan problem solving, Kemampuan bekerja secara mandiri maupun tim, Kemampuan memahami bahasa pemrograman, Keterampilan rekayasa informatika.",
+            "kerja" : "Application Engineer, Game Developer, Sofware Engineering, Konsultan IT, Data Scientist, Software Developer.",
+            "perkuliahan" : "Selama 4 tahun atau 8 semester kamu akan dibekali dengan ilmu dan keterampilan untuk pengembangan perangkat lunak. Sehari-hari, kamu akan mempelajari bahasa pemrograman hingga kecerdasan buatan dan multimedia. Selain itu, kamu pun akan belajar bagaimana memecahkan berbagai masalah komputasi, seperti mencari informasi dari miliaran dokumen web, memproses jutaan permintaan secara bersamaan, menciptakan sistem keamanan, dan masih banyak lainnya.",
+            "alasan" : "Perkembangan teknologi yang pesat menjadikan prospek kerja lulusan Teknik Informatika yang semakin luas dengan jenis pekerjaan keren, jenjang karier beragam dan bergengsi, tentunya juga gaji yang nggak kacangan."        
+        },
+        {
+            "nomor" : 8,
+            "nama" : "Sistem Informasi",
+            "kategori" : "Komputer & Informatika",
+            "deskripsi" : "Jurusan Sistem Informasi adalah bidang keilmuan yang menggabungkan ilmu komputer dengan bisnis dan manajemen. Di prodi ini kamu akan belajar gimana mengidentifikasi kebutuhan dan proses bisnis perusahaan berdasarkan data-data yang dimiliki perusahan, kemudian merancang sistem yang sesuai dengan kebutuhan perusahaan. Lulusan Prodi Sistem Informasi diharapkan dapat mengembangkan sebuah sistem pengolahan data dari berbagai sumber untuk dapat disajikan sebagai informasi yang bermanfaat bagi perusahaan.",
+            "keahlian" : "Kemampuan melakukan rekayasa dengan komputer, Kemampuan problem solving, Kemampuan berpikir sistematis, Kemampuan melakukan analisis, Kemampuan meneliti, Kemampuan manajerial data.",
+            "kerja" : "Konsultan IT, Data Scientist, Software Developer, Digital Marketing, Research And Development.",
+            "perkuliahan" : "Jurusan Sistem Informasi ini masih satu rumpun sama Ilmu Komputer juga Teknik Informatika. Bedanya, selama 4 tahun atau 8 semester kamu akan banyak membahas bagaimana caranya menghubungkan bisnis dengan teknologi. Kamu akan belajar membuat sistem yang mengolah data yang besar, banyak, dalam waktu yang relatif cepat kemudian menampilkannya jadi informasi yang bermanfaat.",
+            "alasan" : "Prospek karier lulusan Sistem Informasi sangat menjanjikan, apalagi dengan semakin pesatnya perkembangan teknologi di jaman seperti sekarang ini."        
+        },
+        {
+            "nomor" : 9,
+            "nama" : "Farmasi",
+            "kategori" : "Matematika & IPA",
+            "deskripsi" : "Jurusan yang satu ini bisa jadi pilihan yang cocok bagi kamu jika ingin berkecimpung di dunia medis selain menjadi dokter atau perawat. Farmasi merupakan kombinasi antara ilmu kesehatan dengan ilmu kimia dan tentunya sangat diperlukan di dunia medis. Selama kuliah di jurusan Farmasi, kamu akan banyak berkutat dengan senyawa kimia untuk dikembangkan jadi bahan obat.",
+            "keahlian" : "Kemampuan meneliti, Kemampuan menganalisis, Kemampuan pelayanan kefarmasian, Kemampuan penjaminan mutu, Kemampuan komunikasi, Pemahaman kimia, Pemahaman biologi.",
+            "kerja" : "Apoteker, Peneliti Bioteknologi, Ahli Kencantikan, Rekam Medis, Wirausaha",
+            "perkuliahan" : "Mata kuliah yang bakal kamu temui selama 4 tahun atau 8 semester kuliah di Farmasi antara lain Kimia Organik, Kimia Sintesis, Kimia Analitik, Farmakologi dan Toksikologi, Farmakognosi, Fitokimia, Teknologi dan Formulasi Sediaan Semisolida dan Likuida, Analisis Biomedik, Teknologi Sediaan Steril, Teknologi dan Formulasi Sediaan Solida, Bioteknologi Farmasi, Interaksi Obat, dll. Jangan kaget ya, kalau sedikit banyak kamu juga mempelajari ilmu kedokteran.",
+            "alasan" : "Lembaga layanan kesehatan mulai dari Rumah Sakit, Puskesmas, Klinik Pengobatan, maupun Laboratorium Klinik membutuhkan seorang Ahli Farmasi yang bertanggung jawab untuk meracik obat hingga menyediakan informasi obat."        
+        },
+        {
+            "nomor" : 10,
+            "nama" : "Desain",
+            "kategori" : "Seni, Desain & Musik",
+            "deskripsi" : "Desain merupakan bidang ilmu multidisiplin yang menggabungkan berbagai aspek untuk menyelesaikan suatu permasalahan. Kuliah di jurusan desain nantinya kamu nggak cuma ngegambar aja lho! Kamu akan belajar gimana cara membuat di media yang tepat untuk menyampaikan pesan secara efektif.",
+            "keahlian" : "Kemampuan komunikasi verbal, visual, dan tekstual, Kemampuan problem solving, Kemampuan melakukan analisis, Kemampuan berpikir kritis, Keterampilan menggambar teknis, Kreatif dan inovatif.",
+            "kerja" : "Illustrator, UI/UX Desugner, Desainer Produk, Desainer Grafis, Animator.",
+            "perkuliahan" : "Kamu yang mengambil jurusan Desain sebagai pilihan studi selanjutnya akan ditempa selama 4 tahun atau 8 semester untuk meraih gelar Sarjana Desain. Jurusan Desain umumnya dispesifikkan menjadi Desain Komunikasi Visual, Desain Interior, Desain Produk juga Desain Fashion. Setelah lulus, kamu pun bisa menempuh studi jenjang pascasarjana.",
+            "alasan" : "Banyak banget peluang kerja yang menanti jurusan desain karena hampir semua bidang membutuhkan designer. Tinggal kamu cari spesialisasi yang akan kamu dalami."        
+        }
+    ]
+}
