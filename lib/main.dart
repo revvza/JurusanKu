@@ -1,24 +1,41 @@
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:jurusanku/app/modules/detailjurusan/views/detailjurusan_view.dart';
-import 'package:jurusanku/app/modules/detailkategori/views/detailkategori_view.dart';
-import 'package:jurusanku/app/modules/home/views/home_view.dart';
-import 'package:jurusanku/app/modules/search/views/search_view.dart';
+import 'package:jurusanku/app/controllers/auth_controller.dart';
+import 'package:jurusanku/app/utils/loading.dart';
 
 import 'app/routes/app_pages.dart';
+import 'firebase_options.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
+  );
+  final authC = Get.put(AuthController(), permanent: true);
+
   runApp(
-    GetMaterialApp(
-      title: "Application",
-      initialRoute: Routes.INTODUCTION,
-      getPages: AppPages.routes,
-      routes: {
-        '/': (context) => HomeView(),
-        '/search': (context) => SearchView(),
-        '/detailkategori': (context) => DetailkategoriView(),
-        '/detailjurusan': (context) => DetailjurusanView(),
+    StreamBuilder<User?>(
+      stream: FirebaseAuth.instance.authStateChanges(),
+      builder: (context, snapshot) {
+        if (snapshot.connectionState == ConnectionState.waiting) {
+          return MaterialApp(
+            home: Scaffold(
+              body: Center(
+                child: LoadingView(),
+              ),
+            ),
+          );
+        }
+        print(snapshot.data);
+        return GetMaterialApp(
+          title: "Application",
+          initialRoute:
+              snapshot.data != null ? Routes.HOME : Routes.INTODUCTION,
+          getPages: AppPages.routes,
+        );
       },
     ),
   );

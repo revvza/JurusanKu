@@ -8,4 +8,5 @@ class MyColors {
   static const Color hovercolor = Color(0xFF114CD6);
   static const Color blue20 = Color.fromRGBO(50, 103, 227, 0.2);
   static const Color border = Color(0xFFB1C5F6);
+  static const Color background = Color(0xFFE5E5E5);
 }

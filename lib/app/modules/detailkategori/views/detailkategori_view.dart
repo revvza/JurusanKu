@@ -3,7 +3,10 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
 import '../controllers/detailkategori_controller.dart';
+
 import 'package:jurusanku/app/contants/my_colors.dart';
+
+import 'package:jurusanku/app/routes/app_pages.dart';
 
 class DetailkategoriView extends GetView<DetailkategoriController> {
   @override
@@ -95,9 +98,7 @@ class DetailkategoriView extends GetView<DetailkategoriController> {
                           icon: Icon(Icons.read_more_outlined),
                           iconSize: 24.0,
                           color: MyColors.hovercolor,
-                          onPressed: () {
-                            Navigator.pushNamed(context, '/detailjurusan');
-                          },
+                          onPressed: () => Get.toNamed(Routes.DETAILJURUSAN),
                         ),
                       ],
                     ),

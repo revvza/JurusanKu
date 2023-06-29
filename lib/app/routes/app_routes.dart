@@ -9,6 +9,8 @@ abstract class Routes {
   static const SEARCH = _Paths.SEARCH;
   static const DETAILKATEGORI = _Paths.DETAILKATEGORI;
   static const DETAILJURUSAN = _Paths.DETAILJURUSAN;
+  static const LOGIN = _Paths.LOGIN;
+  static const REGISTER = _Paths.REGISTER;
 }
 
 abstract class _Paths {
@@ -17,4 +19,6 @@ abstract class _Paths {
   static const SEARCH = '/search';
   static const DETAILKATEGORI = '/detailkategori';
   static const DETAILJURUSAN = '/detailjurusan';
+  static const LOGIN = '/login';
+  static const REGISTER = '/register';
 }

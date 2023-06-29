@@ -1,13 +1,18 @@
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
+
 import 'package:jurusanku/app/contants/my_colors.dart';
+import 'package:jurusanku/app/controllers/auth_controller.dart';
 
 import '../controllers/home_controller.dart';
+
+import 'package:jurusanku/app/routes/app_pages.dart';
 
 class HomeView extends GetView<HomeController> {
   @override
   Widget build(BuildContext context) {
+    final authC = Get.find<AuthController>();
     return Scaffold(
       appBar: AppBar(
         title: Text('JURUSANKU',
@@ -21,10 +26,13 @@ class HomeView extends GetView<HomeController> {
           IconButton(
             icon: Icon(Icons.search),
             iconSize: 24.0,
-            onPressed: () {
-              Navigator.pushNamed(context, '/search');
-            },
+            onPressed: () => Get.toNamed(Routes.SEARCH),
           ),
+          IconButton(
+            onPressed: () => authC.logut(),
+            icon: Icon(Icons.logout),
+            iconSize: 24.0,
+          )
         ],
         backgroundColor: MyColors.maincolor,
       ),
@@ -34,18 +42,6 @@ class HomeView extends GetView<HomeController> {
           padding: EdgeInsets.all(16),
           child: Column(
             children: [
-              Padding(
-                padding: EdgeInsets.only(top: 4, bottom: 20),
-                child: Text(
-                  'WELCOME',
-                  style: TextStyle(
-                    fontFamily: 'Poppins',
-                    fontSize: 16,
-                    fontWeight: FontWeight.bold,
-                    color: MyColors.hovercolor,
-                  ),
-                ),
-              ),
               Container(
                 height: 200,
                 width: Get.width,
@@ -68,7 +64,7 @@ class HomeView extends GetView<HomeController> {
                     ),
                     Center(
                       child: Text(
-                        'Daftar Jurusan Kuliah Di Indonesia Selamat Mencari!',
+                        'Daftar Jurusan Kuliah Di Indonesia \n Selamat Mencari!',
                         style: TextStyle(
                           fontFamily: 'Poppins',
                           fontSize: 13,
@@ -169,10 +165,8 @@ class HomeView extends GetView<HomeController> {
                                 icon: Icon(Icons.read_more_outlined),
                                 iconSize: 24.0,
                                 color: MyColors.hovercolor,
-                                onPressed: () {
-                                  Navigator.pushNamed(
-                                      context, '/detailjurusan');
-                                },
+                                onPressed: () =>
+                                    Get.toNamed(Routes.DETAILJURUSAN),
                               ),
                             ],
                           ),
@@ -232,10 +226,8 @@ class HomeView extends GetView<HomeController> {
                                 icon: Icon(Icons.read_more_outlined),
                                 iconSize: 24.0,
                                 color: MyColors.hovercolor,
-                                onPressed: () {
-                                  Navigator.pushNamed(
-                                      context, '/detailkategori');
-                                },
+                                onPressed: () =>
+                                    Get.toNamed(Routes.DETAILKATEGORI),
                               ),
                             ],
                           ),

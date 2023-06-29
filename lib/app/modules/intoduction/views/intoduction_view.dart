@@ -20,22 +20,22 @@ class IntoductionView extends GetView<IntoductionController> {
                 fontFamily: 'Poppins',
                 fontSize: 31,
                 fontWeight: FontWeight.bold,
-                color: MyColors.maincolor,
+                color: MyColors.hovercolor,
               ),
             ),
             SizedBox(height: 20),
             Padding(
               padding: const EdgeInsets.symmetric(
-                horizontal: 14,
+                horizontal: 16,
               ),
               child: Text(
-                "Jangan ragu untuk memulai perjalanan temukan jurusan impian anda bersama kami.",
+                "Jangan ragu untuk memulai perjalanan \n temukan jurusan impian anda bersama kami.",
                 textAlign: TextAlign.center,
                 style: TextStyle(
                   fontFamily: 'Poppins',
                   fontSize: 13,
                   fontWeight: FontWeight.w500,
-                  color: MyColors.maincolor,
+                  color: MyColors.hovercolor,
                 ),
               ),
             ),
@@ -47,7 +47,7 @@ class IntoductionView extends GetView<IntoductionController> {
             ),
             SizedBox(height: 5),
             ElevatedButton(
-              onPressed: () => Get.offAllNamed(Routes.HOME),
+              onPressed: () => Get.offAllNamed(Routes.LOGIN),
               child: Text(
                 "GET STARTED",
                 style: TextStyle(

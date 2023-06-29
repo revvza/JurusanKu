@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "660396341829",
+    "project_id": "jurusanku-1c92f",
+    "storage_bucket": "jurusanku-1c92f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:660396341829:android:274bbae6e568bb734f412c",
+        "android_client_info": {
+          "package_name": "com.revproject.jurusanku"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "660396341829-n87io26m4ld17ea1o2puotmqmpmedeje.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeZ0panhE6xQwpsyi6ycvMOULkrn5JMLc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "660396341829-n87io26m4ld17ea1o2puotmqmpmedeje.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
