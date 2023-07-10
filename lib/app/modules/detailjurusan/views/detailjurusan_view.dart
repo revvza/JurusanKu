@@ -8,6 +8,8 @@ import 'package:jurusanku/app/contants/my_colors.dart';
 class DetailjurusanView extends GetView<DetailjurusanController> {
   @override
   Widget build(BuildContext context) {
+    final Map<String, dynamic> data =
+        ModalRoute.of(context)!.settings.arguments as Map<String, dynamic>;
     return Scaffold(
       appBar: AppBar(
         leading: IconButton(
@@ -18,7 +20,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
           },
         ),
         title: Text(
-          'Jurusan 1',
+          '${data['nama']}',
           style: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 16,
@@ -55,7 +57,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                       ),
                       child: Center(
                         child: Text(
-                          '1',
+                          '${data['nomor']}',
                           style: TextStyle(
                             color: MyColors.hovercolor,
                             fontSize: 13,
@@ -71,7 +73,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                         crossAxisAlignment: CrossAxisAlignment.start,
                         children: [
                           Text(
-                            'Jurusan',
+                            '${data['nama']}',
                             style: TextStyle(
                               color: MyColors.hovercolor,
                               fontSize: 13,
@@ -80,7 +82,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                             ),
                           ),
                           Text(
-                            'Kategori',
+                            '${data['kategori']}',
                             style: TextStyle(
                               color: MyColors.hovercolor,
                               fontSize: 10,
@@ -91,10 +93,11 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                         ],
                       ),
                     ),
-                    Icon(
-                      Icons.favorite_border,
+                    IconButton(
+                      icon: Icon(Icons.favorite_border),
+                      iconSize: 24.0,
                       color: MyColors.hovercolor,
-                      size: 24,
+                      onPressed: () => controller.addFavorit(data),
                     ),
                   ],
                 ),
@@ -125,7 +128,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                     ),
                     SizedBox(width: 306, height: 10),
                     Text(
-                      'Teknik Informatika merupakan bidang ilmu yang mempelajari bagaimana menggunakan teknologi komputer secara optimal guna menangani masalah transformasi atau pengolahan data dengan proses logika. Di Jurusan Teknik Informatika kamu akan mempelajari berbagai prinsip terkait ilmu komputer mulai dari proses perancangan, pengembangan, pengujian, hingga evaluasi sistem operasi perangkat lunak. Selama kuliah kamu akan banyak mengkaji pemrograman dan komputasi, dan dibekali pula dengan keterampilan merancang perangkat lunak.',
+                      '${data['deskripsi']}',
                       style: TextStyle(
                         color: MyColors.neural100,
                         fontSize: 10,
@@ -145,7 +148,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                     ),
                     SizedBox(width: 306, height: 10),
                     Text(
-                      'Kemampuan melakukan analisis, kemampuan berpikir sistematis, kemapuan bekerja secara mandiri maupun tim, keterampilan rekayasa informatika, kemampuan berpikir logis, kemampuan problem solving, kemampuan memahami bahasa pemrograman',
+                      '${data['keahlian']}',
                       style: TextStyle(
                         color: MyColors.neural100,
                         fontSize: 10,
@@ -165,7 +168,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                     ),
                     SizedBox(width: 306, height: 10),
                     Text(
-                      'Application Engineer, Game Developer, Sofware Engineering, Konsultan IT, Data Scientist, Software Developer,.',
+                      '${data['kerja']}',
                       style: TextStyle(
                         color: MyColors.neural100,
                         fontSize: 10,
@@ -185,7 +188,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                     ),
                     SizedBox(width: 306, height: 10),
                     Text(
-                      'Selama 4 tahun atau 8 semester kamu akan dibekali dengan ilmu dan keterampilan untuk pengembangan perangkat lunak.',
+                      '${data['perkuliahan']}',
                       style: TextStyle(
                         color: MyColors.neural100,
                         fontSize: 10,
@@ -205,7 +208,7 @@ class DetailjurusanView extends GetView<DetailjurusanController> {
                     ),
                     SizedBox(width: 306, height: 10),
                     Text(
-                      'Perkembangan teknologi yang pesat menjadikan prospek kerja lulusan Teknik Informatika yang semakin luas',
+                      '${data['alasan']}',
                       style: TextStyle(
                         color: MyColors.neural100,
                         fontSize: 10,

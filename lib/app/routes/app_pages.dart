@@ -10,6 +10,8 @@ import 'package:jurusanku/app/modules/intoduction/bindings/intoduction_binding.d
 import 'package:jurusanku/app/modules/intoduction/views/intoduction_view.dart';
 import 'package:jurusanku/app/modules/login/bindings/login_binding.dart';
 import 'package:jurusanku/app/modules/login/views/login_view.dart';
+import 'package:jurusanku/app/modules/profile/bindings/profile_binding.dart';
+import 'package:jurusanku/app/modules/profile/views/profile_view.dart';
 import 'package:jurusanku/app/modules/register/bindings/register_binding.dart';
 import 'package:jurusanku/app/modules/register/views/register_view.dart';
 import 'package:jurusanku/app/modules/search/bindings/search_binding.dart';
@@ -57,6 +59,11 @@ class AppPages {
       name: _Paths.REGISTER,
       page: () => RegisterView(),
       binding: RegisterBinding(),
+    ),
+    GetPage(
+      name: _Paths.PROFILE,
+      page: () => ProfileView(),
+      binding: ProfileBinding(),
     ),
   ];
 }

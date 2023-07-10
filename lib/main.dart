@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
 import 'package:jurusanku/app/controllers/auth_controller.dart';
+import 'package:jurusanku/app/modules/profile/controllers/profile_controller.dart';
 import 'package:jurusanku/app/utils/loading.dart';
 
 import 'app/routes/app_pages.dart';
@@ -15,6 +16,7 @@ void main() async {
     options: DefaultFirebaseOptions.currentPlatform,
   );
   final authC = Get.put(AuthController(), permanent: true);
+  final profileC = Get.put(ProfileController(), permanent: true);
 
   runApp(
     StreamBuilder<User?>(
