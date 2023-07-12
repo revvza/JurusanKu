@@ -4,6 +4,8 @@ import 'package:jurusanku/app/modules/detailjurusan/bindings/detailjurusan_bindi
 import 'package:jurusanku/app/modules/detailjurusan/views/detailjurusan_view.dart';
 import 'package:jurusanku/app/modules/detailkategori/bindings/detailkategori_binding.dart';
 import 'package:jurusanku/app/modules/detailkategori/views/detailkategori_view.dart';
+import 'package:jurusanku/app/modules/forgotpassword/bindings/forgotpassword_binding.dart';
+import 'package:jurusanku/app/modules/forgotpassword/views/forgotpassword_view.dart';
 import 'package:jurusanku/app/modules/home/bindings/home_binding.dart';
 import 'package:jurusanku/app/modules/home/views/home_view.dart';
 import 'package:jurusanku/app/modules/intoduction/bindings/intoduction_binding.dart';
@@ -64,6 +66,11 @@ class AppPages {
       name: _Paths.PROFILE,
       page: () => ProfileView(),
       binding: ProfileBinding(),
+    ),
+    GetPage(
+      name: _Paths.FORGOTPASSWORD,
+      page: () => ForgotpasswordView(),
+      binding: ForgotpasswordBinding(),
     ),
   ];
 }

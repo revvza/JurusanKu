@@ -69,7 +69,7 @@ class LoginView extends GetView<LoginController> {
                       controller: emailC,
                       decoration: InputDecoration(
                         border: InputBorder.none,
-                        hintText: "revif25@gmail.com",
+                        hintText: "rev25@gmail.com",
                         hintStyle: TextStyle(
                           fontSize: 13,
                           fontFamily: 'Poppins',
@@ -116,9 +116,9 @@ class LoginView extends GetView<LoginController> {
                     mainAxisAlignment: MainAxisAlignment.end,
                     children: [
                       TextButton(
-                        onPressed: () => Get.toNamed(Routes.HOME),
+                        onPressed: (() => Get.toNamed(Routes.FORGOTPASSWORD)),
                         child: Text(
-                          "Forgot Password ?",
+                          "Lupa Password ?",
                           style: TextStyle(
                             fontFamily: 'Poppins',
                             fontSize: 13,

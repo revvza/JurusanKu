@@ -27,7 +27,7 @@ class RegisterView extends GetView<RegisterController> {
           },
         ),
         title: Text(
-          'SIGN UP',
+          'REGISTER',
           style: TextStyle(
             fontFamily: 'Poppins',
             fontSize: 16,
@@ -103,7 +103,7 @@ class RegisterView extends GetView<RegisterController> {
                         controller: educationC,
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "SD/SMP/SMA/SMK/KULIAH",
+                          hintText: "SD/SMP/SMA/SMK",
                           hintStyle: TextStyle(
                             fontSize: 13,
                             fontFamily: 'Poppins',
@@ -135,7 +135,7 @@ class RegisterView extends GetView<RegisterController> {
                         controller: emailC,
                         decoration: InputDecoration(
                           border: InputBorder.none,
-                          hintText: "revif25@gmail.com",
+                          hintText: "rev25@gmail.com",
                           hintStyle: TextStyle(
                             fontSize: 13,
                             fontFamily: 'Poppins',
@@ -259,7 +259,7 @@ class RegisterView extends GetView<RegisterController> {
                         TextButton(
                           onPressed: () => Get.toNamed(Routes.LOGIN),
                           child: Text(
-                            "Login",
+                            "Masuk",
                             textAlign: TextAlign.center,
                             style: TextStyle(
                               fontFamily: 'Poppins',

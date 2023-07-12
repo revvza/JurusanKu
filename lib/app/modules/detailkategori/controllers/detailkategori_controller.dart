@@ -1,20 +1,18 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:get/get.dart';
 
 class DetailkategoriController extends GetxController {
-  //TODO: Implement DetailkategoriController
+  FirebaseFirestore firestore = FirebaseFirestore.instance;
 
-  final count = 0.obs;
-  @override
-  void onInit() {
-    super.onInit();
+  Stream<QuerySnapshot<Map<String, dynamic>>> getJurusanByKategori(
+      String kategori) {
+    CollectionReference jurusan = firestore.collection("jurusan");
+
+    return jurusan
+        .where("kategori", isEqualTo: kategori)
+        .snapshots()
+        .map((snapshot) {
+      return snapshot as QuerySnapshot<Map<String, dynamic>>;
+    });
   }
-
-  @override
-  void onReady() {
-    super.onReady();
-  }
-
-  @override
-  void onClose() {}
-  void increment() => count.value++;
 }

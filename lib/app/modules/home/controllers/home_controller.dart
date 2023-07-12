@@ -1,10 +1,11 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+
+import '../../../controllers/auth_controller.dart';
 
 class HomeController extends GetxController {
-  //TODO: Implement HomeController
-
   FirebaseFirestore firestore = FirebaseFirestore.instance;
 
   Stream<QuerySnapshot<Object?>> streamData() {
@@ -29,21 +30,37 @@ class HomeController extends GetxController {
     });
   }
 
-  Stream<QuerySnapshot<Map<String, dynamic>>> getFavoritSnapshot() {
-    CollectionReference favorit = firestore.collection("favorit");
+  Stream<QuerySnapshot<Map<String, dynamic>>> getFavoritSnapshotByUser() {
+    AuthController authC = Get.find<AuthController>();
+    User? currentUser = authC.auth.currentUser;
 
-    return favorit.snapshots().map((QuerySnapshot<Object?> snapshot) {
-      return snapshot as QuerySnapshot<Map<String, dynamic>>;
-    });
+    if (currentUser != null) {
+      CollectionReference favorit = firestore.collection("favorit");
+
+      return favorit
+          .where('user_id', isEqualTo: currentUser.uid)
+          .snapshots()
+          .map((snapshot) {
+        return snapshot as QuerySnapshot<Map<String, dynamic>>;
+      });
+    }
+
+    // Jika pengguna tidak login, kembalikan stream kosong
+    return Stream<QuerySnapshot<Map<String, dynamic>>>.empty();
   }
 
-  void deleteFavorit(String favoritId) {
-    CollectionReference favorit = firestore.collection("favorit");
+  Stream<List<String>> streamKategoriData() {
+    CollectionReference jurusan = firestore.collection("jurusan");
 
-    favorit.doc(favoritId).delete().then((value) {
-      showNotification('Data berhasil dihapus dari favorit');
-    }).catchError((error) {
-      showNotification('Terjadi kesalahan saat menghapus data');
+    return jurusan.snapshots().map((querySnapshot) {
+      Set<String> kategoriSet = Set<String>();
+
+      querySnapshot.docs.forEach((document) {
+        String kategori = (document.data() as Map<String, dynamic>)["kategori"];
+        kategoriSet.add(kategori);
+      });
+
+      return kategoriSet.toList();
     });
   }
 

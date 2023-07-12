@@ -35,7 +35,7 @@ class SearchView extends GetView<SearchController> {
           Container(
             padding: EdgeInsets.only(top: 16),
             child: Text(
-              'Gunakan huruf besar diawal kalimat untuk pencarian',
+              'Gunakan huruf besar di setiap awal kalimat untuk pencarian',
               style: TextStyle(
                 fontFamily: 'Poppins',
                 fontSize: 10,

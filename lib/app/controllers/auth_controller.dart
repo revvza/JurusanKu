@@ -1,4 +1,5 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:jurusanku/app/routes/app_pages.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
@@ -15,9 +16,10 @@ class AuthController extends GetxController {
       Get.offAllNamed(Routes.HOME);
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
-        print('No user found for that email.');
+        showNotification(
+            'Tidak ada pengguna yang ditemukan untuk email tersebut.');
       } else if (e.code == 'wrong-password') {
-        print('Wrong password provided for that user.');
+        showNotification('Password pengguna salah.');
       }
     }
   }
@@ -37,25 +39,32 @@ class AuthController extends GetxController {
         await firestore.collection('users').doc(userCredential.user!.uid).set({
           'fullname': fullname,
           'email': email,
-          'password': password,
           'education': education,
         });
 
         Get.offAllNamed(Routes.HOME);
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {
-          print('No user found for that email.');
+          showNotification(
+              'Tidak ada pengguna yang ditemukan untuk email tersebut.');
         } else if (e.code == 'wrong-password') {
-          print('Wrong password provided for that user.');
+          showNotification('Password pengguna salah.');
         }
       }
     } else {
-      print("Password tidak sama");
+      showNotification("Password tidak sama");
     }
   }
 
   void logout() async {
     await FirebaseAuth.instance.signOut();
     Get.offAllNamed(Routes.LOGIN);
+  }
+
+  void showNotification(String message) {
+    final snackBar = SnackBar(
+      content: Text(message),
+    );
+    ScaffoldMessenger.of(Get.context!).showSnackBar(snackBar);
   }
 }
