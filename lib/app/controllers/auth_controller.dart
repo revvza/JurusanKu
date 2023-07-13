@@ -17,9 +17,9 @@ class AuthController extends GetxController {
     } on FirebaseAuthException catch (e) {
       if (e.code == 'user-not-found') {
         showNotification(
-            'Tidak ada pengguna yang ditemukan untuk email tersebut.');
+            'Tidak ada pengguna yang ditemukan untuk email tersebut');
       } else if (e.code == 'wrong-password') {
-        showNotification('Password pengguna salah.');
+        showNotification('Password pengguna salah');
       }
     }
   }
@@ -46,9 +46,9 @@ class AuthController extends GetxController {
       } on FirebaseAuthException catch (e) {
         if (e.code == 'user-not-found') {
           showNotification(
-              'Tidak ada pengguna yang ditemukan untuk email tersebut.');
+              'Tidak ada pengguna yang ditemukan untuk email tersebut');
         } else if (e.code == 'wrong-password') {
-          showNotification('Password pengguna salah.');
+          showNotification('Password pengguna salah');
         }
       }
     } else {

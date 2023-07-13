@@ -99,6 +99,26 @@
             "kerja" : "Illustrator, UI/UX Desugner, Desainer Produk, Desainer Grafis, Animator.",
             "perkuliahan" : "Kamu yang mengambil jurusan Desain sebagai pilihan studi selanjutnya akan ditempa selama 4 tahun atau 8 semester untuk meraih gelar Sarjana Desain. Jurusan Desain umumnya dispesifikkan menjadi Desain Komunikasi Visual, Desain Interior, Desain Produk juga Desain Fashion. Setelah lulus, kamu pun bisa menempuh studi jenjang pascasarjana.",
             "alasan" : "Banyak banget peluang kerja yang menanti jurusan desain karena hampir semua bidang membutuhkan designer. Tinggal kamu cari spesialisasi yang akan kamu dalami."        
+        },
+        {
+            "nomor" : 11,
+            "nama" : "Matematika",
+            "kategori" : "Matematika & IPA",
+            "deskripsi" : "Jurusan Matematika fokus mempelajari berbagai teori matematika secara mendalam, seperti geometri, aljabar, hingga matematika diskrit. Jadi,  akan bertemu dengan beragam konsep dalam matematika seperti mempelajari fitur lain dari angka, juga ruang multidimensi. Selain itu, ada juga lho matematika terapan untuk mempelajari aplikasi matematika di bidang lainnya.",
+            "keahlian" : "Kemampuan melakukan analisis, Kemampuan berpikir terstruktur, Kemampuan berhitung, Kemampuan problem solving, Kemampuan meneliti, Kemampuan berpikir kritis dan rasional, Detil, teliti, tekun",
+            "kerja" : "Guru, Dosen, Data Scientist, Penilai Real Estate, Market Researcher, Application Engineer, Ahli Statistik, Aktuaris",
+            "perkuliahan" : "Kuliah di jurusan Matematika selama 4 tahun atau 8 semester, kamu akan banyak mengutak-atik berbagai teorema dan membuktikannya. Selain itu, kamu akan mempelajari bagaimana memperoleh nilai optimal dari permasalahan yang kompleks, bagaimana matematika diaplikasikan dalam bidang komputer, keuangan, dan bidang lainnya. Kamu juga akan dibekali dengan cara berpikir logis, analitis, dan sistematis untuk menyelesaikan suatu permasalahan.",
+            "alasan" : "Ilmu Matematika sejatinya sangat aplikatif, sehingga ada banyak peluang karier bagi lulusannya, misalnya di sektor keuangan, teknologi informasi, dan sebagainya."        
+        },
+        {
+            "nomor" : 12,
+            "nama" : "Multimedia",
+            "kategori" : "Seni, Desain & Musik",
+            "deskripsi" : "Jurusan Multimedia sangat cocok untuk kamu yang memiliki tingkat kreativitas tinggi dan punya passion di bidang teknologi. Secara umum, Jurusan Multimedia fokus pada pemanfaatan teknologi untuk memproduksi dan mendistribusikan konten multimedia.",
+            "keahlian" : "Keterampilan menggambar teknis, Kemampuan mengoperasikan software gambar, Kemampuan berpikir kreatif dan terstruktur, Kemampuan imajinasi, Kemampuan memecahkan masalah, Kemampuan bekerja dalam tim, Pemahaman artistik, Pemahaman komposisi warna",
+            "kerja" : "Game Creator, Desainer Grafis, Game Programmer",
+            "perkuliahan" : "Kamu  harus siap untuk mengasah kemampuan dan kreativitas sehingga bisa menghasilkan sebuah karya seperti film, website, maupun game. Minat yang baik terhadap bidang ilmu komputer dan update terhadap perkembangan teknologi merupakan modal penting untuk melanjutkan pendidikan ke jurusan ini. Umumnya, mata kuliah yang akan dipelajari di Jurusan Multimedia memiliki goal untuk bisa menghasilkan karya multimedia yang layak dimanfaatkan oleh banyak orang, oleh karena itu di semester lanjut akan ada mata kuliah yang berhubungan dengan berbagai project multimedia. ",
+            "alasan" : "Peluang kerja yang berhubungan dengan Jurusan Multimedia sangat luas dan menjanjikan. Perkembangan teknologi yang pesat membuat banyak perusahaan membutuhkan lulusan Jurusan Multimedia."        
         }
     ]
 }

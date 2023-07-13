@@ -20,7 +20,7 @@ class ForgotpasswordController extends GetxController {
       } catch (e) {
         showNotification("Terjadi Kesalahan \n"
             "\n"
-            "Tidak dapat mengirim email reset password.");
+            "Tidak dapat mengirim email reset password");
       } finally {
         isLoading.value = false;
       }
