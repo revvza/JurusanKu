@@ -107,17 +107,6 @@ class ProfileView extends GetView<ProfileController> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 580),
-                  Text(
-                    "Credit by Revi Firzatulloh",
-                    style: TextStyle(
-                      fontWeight: FontWeight.normal,
-                      fontFamily: 'Poppins',
-                      fontSize: 12,
-                      color: MyColors.neural70,
-                    ),
-                    textAlign: TextAlign.center,
-                  ),
                 ],
               );
             } else {
