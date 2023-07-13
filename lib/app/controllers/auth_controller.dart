@@ -35,7 +35,6 @@ class AuthController extends GetxController {
           password: password,
         );
 
-        // Create a document in the "users" collection with the user's data
         await firestore.collection('users').doc(userCredential.user!.uid).set({
           'fullname': fullname,
           'email': email,

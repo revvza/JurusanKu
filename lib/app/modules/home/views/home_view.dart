@@ -202,7 +202,6 @@ class HomeView extends GetView<HomeController> {
                         return Center(child: CircularProgressIndicator());
                       },
                     ),
-
                     // Tab Bar Kategori
                     StreamBuilder<List<String>>(
                       stream: controller.streamKategoriData(),
@@ -283,7 +282,6 @@ class HomeView extends GetView<HomeController> {
                         return Center(child: CircularProgressIndicator());
                       },
                     ),
-
                     // Tab Bar Favorit
                     StreamBuilder<QuerySnapshot<Map<String, dynamic>>>(
                       stream: controller.getFavoritSnapshotByUser(),
