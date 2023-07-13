@@ -18,6 +18,7 @@ Teknologi yang digunakan sebagai berikut:
 
 ## Fitur-Fitur
 
+Fitur-fitur yang ada di aplikasi:
 - Autentikasi pengguna melalui email dan password
 - Login dan Register
 - Lupa Password
