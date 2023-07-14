@@ -17,8 +17,6 @@ Teknologi yang digunakan sebagai berikut:
 
 ## Fitur-Fitur
 
-## Fitur-Fitur
-
 Fitur-fitur yang ada di aplikasi:
 
 - Autentikasi Pengguna:
