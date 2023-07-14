@@ -1,7 +1,7 @@
 
 # JurusanKu
 
-“JurusanKu" adalah sebuah aplikasi mobile yang bertujuan untuk membantu calon mahasiswa dalam mencari jurusan yang tepat di perguruan tinggi di Indonesia yang di kembangkan menggunakan teknologi Flutter, Dart, Firebase dan GetX
+Saat ini, banyak calon mahasiswa yang merasa kesulitan dalam memilih jurusan yang sesuai dengan minat mereka. Selain itu, informasi mengenai jurusan di perguruan tinggi yang ada di Indonesia juga belum tersedia secara lengkap dan mudah diakses. Oleh karena itu, proyek "JurusanKu" hadir sebagai solusi untuk membantu calon mahasiswa dalam mencari jurusan yang tepat dengan memberikan informasi yang lengkap dan mudah diakses melalui sebuah aplikasi mobile.
 
 ## Tujuan
 
@@ -10,11 +10,10 @@ Tujuan dari proyek "JurusanKu" adalah untuk memberikan solusi bagi calon mahasis
 ## Teknologi yang Digunakan
 
 Teknologi yang digunakan sebagai berikut:
-- Flutter digunakan untuk mengembangkan antarmuka pengguna (UI) yang indah dan responsif untuk aplikasi mobile.
-- Firebase digunakan untuk pengembangan aplikasi mobile yang menyediakan berbagai layanan backend seperti Firebase Authentication, Firebase Firestore.
-- Getx adalah library state management yang dirancang untuk pengembangan aplikasi
-- Flutter, memberikan kemudahan dalam mengelola state aplikasi, routing, dan pengendalian navigasi.
-- Dart adalah bahasa pemrograman yang digunakan dalam pengembangan aplikasi Flutter.
+- Flutter: digunakan untuk mengembangkan antarmuka pengguna (UI) yang indah dan responsif untuk aplikasi mobile.
+- Firebase: digunakan untuk pengembangan aplikasi mobile yang menyediakan berbagai layanan backend seperti Firebase Authentication, Firebase Firestore.
+- GetX: digunakan untuk pengembangan aplikasi Flutter, memberikan kemudahan dalam mengelola state aplikasi, routing, dan pengendalian navigasi.
+- Dart: bahasa pemrograman yang digunakan dalam pengembangan aplikasi Flutter.
 
 ## Fitur-Fitur
 
