@@ -18,6 +18,8 @@ import 'package:jurusanku/app/modules/register/bindings/register_binding.dart';
 import 'package:jurusanku/app/modules/register/views/register_view.dart';
 import 'package:jurusanku/app/modules/search/bindings/search_binding.dart';
 import 'package:jurusanku/app/modules/search/views/search_view.dart';
+import 'package:jurusanku/app/modules/updateprofile/bindings/updateprofile_binding.dart';
+import 'package:jurusanku/app/modules/updateprofile/views/updateprofile_view.dart';
 
 part 'app_routes.dart';
 
@@ -71,6 +73,11 @@ class AppPages {
       name: _Paths.FORGOTPASSWORD,
       page: () => ForgotpasswordView(),
       binding: ForgotpasswordBinding(),
+    ),
+    GetPage(
+      name: _Paths.UPDATEPROFILE,
+      page: () => UpdateprofileView(),
+      binding: UpdateprofileBinding(),
     ),
   ];
 }

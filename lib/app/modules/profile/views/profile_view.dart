@@ -4,6 +4,7 @@ import 'package:get/get.dart';
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:jurusanku/app/contants/my_colors.dart';
 import '../../../controllers/auth_controller.dart';
+import '../../../routes/app_pages.dart';
 import '../controllers/profile_controller.dart';
 
 class ProfileView extends GetView<ProfileController> {
@@ -89,6 +90,26 @@ class ProfileView extends GetView<ProfileController> {
                   SizedBox(
                     height: 10,
                   ),
+                  InkWell(
+                    onTap: () =>
+                        Get.toNamed(Routes.UPDATEPROFILE, arguments: user),
+                    child: Row(
+                      children: [
+                        Icon(Icons.person, color: MyColors.neural70),
+                        SizedBox(width: 20),
+                        Text(
+                          "Update Profile",
+                          style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'Poppins',
+                            fontSize: 13,
+                            color: MyColors.neural70,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 10),
                   InkWell(
                     onTap: () => authC.logout(),
                     child: Row(

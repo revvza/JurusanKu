@@ -64,6 +64,16 @@ class HomeController extends GetxController {
     });
   }
 
+  void removeFavorit(String? favoritId) async {
+    try {
+      CollectionReference favorit = firestore.collection("favorit");
+      await favorit.doc(favoritId).delete();
+      showNotification('Jurusan dihapus dari favorit');
+    } catch (e) {
+      showNotification('Terjadi kesalahan saat menghapus jurusan');
+    }
+  }
+
   void showNotification(String message) {
     final snackBar = SnackBar(
       content: Text(message),

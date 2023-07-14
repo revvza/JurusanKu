@@ -35,10 +35,12 @@ class AuthController extends GetxController {
           password: password,
         );
 
+        String uid = userCredential.user!.uid;
         await firestore.collection('users').doc(userCredential.user!.uid).set({
           'fullname': fullname,
           'email': email,
           'education': education,
+          'uid': uid,
         });
 
         Get.offAllNamed(Routes.HOME);

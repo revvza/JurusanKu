@@ -21,13 +21,17 @@ class DetailjurusanController extends GetxController {
           .get();
 
       if (snapshot.docs.isEmpty) {
-        favorit.add({
+        DocumentReference documentReference = await favorit.add({
           ...data,
           'user_id': currentUser.uid,
         });
-        showNotification('Data berhasil ditambahkan ke favorit');
+        String favoritId = documentReference.id;
+        showNotification('Jurusan berhasil ditambahkan ke favorit');
+
+        // Menyimpan favoritId ke dalam data
+        await favorit.doc(favoritId).update({'favoritId': favoritId});
       } else {
-        showNotification('Data sudah ada di favorit');
+        showNotification('Jurusan sudah ada di favorit');
       }
     }
   }

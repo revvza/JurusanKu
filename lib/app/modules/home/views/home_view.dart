@@ -398,13 +398,12 @@ class HomeView extends GetView<HomeController> {
                                       Spacer(),
                                       // Icon more
                                       IconButton(
-                                        icon: Icon(Icons.read_more_outlined),
-                                        iconSize: 24.0,
-                                        color: MyColors.hovercolor,
-                                        onPressed: () => Get.toNamed(
-                                            Routes.DETAILJURUSAN,
-                                            arguments: favoritData[index]),
-                                      ),
+                                          icon: Icon(Icons.delete_outline),
+                                          iconSize: 24.0,
+                                          color: MyColors.neural70,
+                                          onPressed: () => controller
+                                              .removeFavorit(favoritData[index]
+                                                  ["favoritId"])),
                                     ],
                                   ),
                                 ),
