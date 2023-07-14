@@ -109,7 +109,26 @@ class ProfileView extends GetView<ProfileController> {
                       ],
                     ),
                   ),
-                  SizedBox(height: 10),
+                  SizedBox(height: 15),
+                  InkWell(
+                    onTap: () => Get.toNamed(Routes.UPDATEPASSWORD),
+                    child: Row(
+                      children: [
+                        Icon(Icons.password, color: MyColors.neural70),
+                        SizedBox(width: 20),
+                        Text(
+                          "New Password",
+                          style: TextStyle(
+                            fontWeight: FontWeight.normal,
+                            fontFamily: 'Poppins',
+                            fontSize: 13,
+                            color: MyColors.neural70,
+                          ),
+                        ),
+                      ],
+                    ),
+                  ),
+                  SizedBox(height: 15),
                   InkWell(
                     onTap: () => authC.logout(),
                     child: Row(
