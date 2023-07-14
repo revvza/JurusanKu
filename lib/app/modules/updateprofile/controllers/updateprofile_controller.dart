@@ -21,7 +21,8 @@ class UpdateprofileController extends GetxController {
           "education": educationC.text,
         });
         Get.back();
-        showNotification("Berhasil \n" "\n" "Berhasil update profile.");
+        Get.back();
+        showNotification("Berhasil \n" "\n" "Berhasil update profile");
       } catch (e) {
         showNotification(
             "Terjadi Kesalahan \n" "\n" "Tidak dapat update profile");

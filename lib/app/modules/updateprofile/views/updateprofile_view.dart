@@ -14,7 +14,7 @@ class UpdateprofileView extends GetView<UpdateprofileController> {
     controller.educationC.text = user["education"];
     return Scaffold(
       appBar: AppBar(
-        title: Text('PROFILE',
+        title: Text('UPDATE PROFILE',
             textAlign: TextAlign.center,
             style: TextStyle(
               fontFamily: 'Poppins',

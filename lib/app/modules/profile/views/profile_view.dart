@@ -95,7 +95,7 @@ class ProfileView extends GetView<ProfileController> {
                         Get.toNamed(Routes.UPDATEPROFILE, arguments: user),
                     child: Row(
                       children: [
-                        Icon(Icons.person, color: MyColors.neural70),
+                        Icon(Icons.settings_outlined, color: MyColors.neural70),
                         SizedBox(width: 20),
                         Text(
                           "Update Profile",
