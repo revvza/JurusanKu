@@ -117,7 +117,7 @@ class ProfileView extends GetView<ProfileController> {
                         Icon(Icons.password, color: MyColors.neural70),
                         SizedBox(width: 20),
                         Text(
-                          "New Password",
+                          "Update Password",
                           style: TextStyle(
                             fontWeight: FontWeight.normal,
                             fontFamily: 'Poppins',
